@@ -30,6 +30,7 @@ namespace RoleplayGame
             get
             {
                 return Shield.DefenseValue + Helmet.DefenseValue;
+                 //
             }
         }
 
