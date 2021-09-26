@@ -17,17 +17,18 @@ namespace Program
             Dwarf gimli = new Dwarf("Gimli");
             gimli.Axe = new Axe();
             gimli.Helmet = new Helmet();
+            gimli.Shield = new Shield();
 
             Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
-            Console.WriteLine($"Gandalf attacks Gimli with ⚔️ {gandalf.AttackValue}");
+            Console.WriteLine($"Gandalf attacks Gimli with '⚔️' {gandalf.AttackValue}");
 
             gimli.ReceiveAttack(gandalf.AttackValue);
 
-            Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
+            Console.WriteLine($"Gimli has '❤️' {gimli.Health}");
 
             gimli.Cure();
 
-            Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
+            Console.WriteLine($"Gimli has '❤️' {gimli.Health}");
         }
     }
 }
